@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Icons -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <title>Movie Watchlist - Home</title>
+    </head>
+    <body>
+        <header>
+            <h1>Find your film</h1>
+            <nav>
+                <a href="index.html" class="watchlist-nav-link">Search for movies</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="watchlist" class="movie-list"></section>
+
+            <section id="ui-state" class="ui-state">
+                <p>Your watchlist is looking a little empty...</p>
+                <a href="index.html" class="watch-btn">
+                    <span class="material-symbols-outlined icon">
+                        add_circle
+                    </span>
+                    Let's add some movies!
+                </a>
+            </section>
+        </main>
+    
+        <script src="watchlist.js" type="module"></script>
+    </body>
+</html>

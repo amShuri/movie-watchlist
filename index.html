@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Icons -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <title>Movie Watchlist - Home</title>
+    </head>
+    <body>
+        <header>
+            <h1>Find your film</h1>
+            <nav>
+                <a href="watchlist.html" class="watchlist-nav-link">My Watchlist</a>
+            </nav>
+        </header>
+
+        <main>
+            <form id="search-form" class="search-form">
+                <div class="search-input-group">
+                <span class="material-symbols-outlined search-icon">
+                    search
+                </span>
+
+                    <label for="search-input" class="sr-only">Search for a movie</label>
+
+                    <input 
+                        type="search"
+                        id="search-input"
+                        placeholder="Search for a movie"
+                        class="search-input">
+                </div>
+
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+
+            <div 
+                id="status-message"
+                role="status"
+                aria-live="polite"
+                class="sr-only">
+            </div>
+
+            <section id="movie-list" class="movie-list"></section>
+
+            <section id="ui-state" class="ui-state" aria-live="polite">
+                <span class="material-symbols-outlined cinema-icon">movie</span>
+                <p>Start Exploring</p>
+            </section>
+        </main>
+    
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
