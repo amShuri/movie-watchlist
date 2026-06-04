@@ -38,7 +38,7 @@ moviesEl.addEventListener('click', (e) => {
 })
 
 searchForm.addEventListener('submit', (e) => {
-    fetch(`http://www.omdbapi.com/?apikey=7c778b9f&s=${searchInput.value}`)
+    fetch(`https://www.omdbapi.com/?apikey=7c778b9f&s=${searchInput.value}`)
         .then(res => res.json())
         .then(data => {
             if (data.Response === 'False') {
@@ -48,7 +48,7 @@ searchForm.addEventListener('submit', (e) => {
             }
             
             return Promise.all(data.Search.map((movie) => {
-                return fetch(`http://www.omdbapi.com/?apikey=7c778b9f&i=${movie.imdbID}&type=movie`)
+                return fetch(`https://www.omdbapi.com/?apikey=7c778b9f&i=${movie.imdbID}&type=movie`)
                     .then(res => res.json())
             }))
         })
