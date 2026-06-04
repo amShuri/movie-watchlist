@@ -9,7 +9,6 @@ const moviesEl = document.getElementById('movie-list')
 const searchForm = document.getElementById('search-form')
 const searchInput = document.getElementById('search-input')
 const uiStateEl = document.getElementById('ui-state')
-const loadingSpinner = document.getElementById('loading-spinner')
 
 let movies = []
 const watchlist = loadFromLocalStorage('watchlist') || []
